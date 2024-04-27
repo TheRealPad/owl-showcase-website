@@ -1,0 +1,20 @@
+.progression {
+  margin-top: 10rem;
+}
+
+.title {
+  color: var(--color-tertiary);
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+}
+
+.content {
+  & > p {
+    font-weight: bolder;
+  }
+}

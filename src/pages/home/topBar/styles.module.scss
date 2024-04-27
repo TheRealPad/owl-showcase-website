@@ -1,0 +1,60 @@
+.topBar {
+  display: inline-flex;
+  background-color: var(--color-secondary);
+  width: calc(100% - 2rem);
+  border-radius: 8px;
+  padding: 1rem;
+  justify-content: space-between;
+  position: sticky;
+  top: 1rem;
+}
+
+.title {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.name {
+  color: var(--color-tertiary);
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+  font-weight: bolder;
+}
+
+.imageShape {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 100px;
+
+  &:hover {
+    animation: rotateIcon 2s infinite;
+  }
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+.contact {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes rotateIcon {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
